@@ -4,8 +4,6 @@
     <meta charset="UTF-8" />
     <title>Document</title>
     <link rel="stylesheet" href="./optimizer.css" />
-    <script src="./cutlist_1.js"></script>
-    <script src="./cutlist_2.js"></script>
   </head>
   <body>
     <main>
@@ -25,7 +23,7 @@
           />
         </div>
         <div class="add_btn">
-          <button class="add_buttons" type="button" onclick="steelTypeAdd()">
+          <button class="stl_add_button" type="button">
             Add
           </button>
         </div>
@@ -40,8 +38,6 @@
             <select
               name="steel_select"
               id="steel_type_selection"
-              onchange="selectChange();"
-              onmouseover="selectHover();"
             ></select>
           </div>
           <div class="LAF_title">
@@ -63,9 +59,8 @@
           </div>
           <div class="row_add_btn">
             <button
-              class="add_buttons"
+              class="row_add_button"
               id="add_row_btn"
-              onclick="entry_rows_add_btn()"
             >
               Add Row
             </button>
@@ -94,12 +89,14 @@
                 </div>
               </div>
               <div class="remover" id="row_remover">
-                <button id="row_1_clear" onclick="row_remove();">Remove</button>
+                <button id="row_1_clear" >Remove</button>
               </div>
             </div>
           </div>
         </section>
       </article>
     </main>
+    <script src="./cutlist_1.js"></script>
+    <script src="./cutlist_2.js"></script>
   </body>
 </html>

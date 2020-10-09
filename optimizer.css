@@ -105,7 +105,7 @@ header {
 	grid-template-areas: "row_number_viewers length_inputs frequency_inputs";
 	grid-area: length_and_frequencies;
 	overflow-y: auto;
-	height: 300px;
+	height: 250px;
 	background-color: whitesmoke;
 }
 .row_number_viewers {
@@ -184,7 +184,7 @@ header {
 	color: rgb(0, 0, 0);
 	background-color: white;
 }
-.add_buttons {
+.row_add_button, .stl_add_button {
 	width: 100%;
 	color: white;
 	background: hsl(122, 39%, 49%);
@@ -194,13 +194,14 @@ header {
 	font-size: 1rem;
 	font-weight: 600;
 }
-.add_buttons:active {
+.row_add_button:active, .stl_add_button:active {
 	background: hsl(122, 39%, 45%);
 }
 button:hover {
 	animation-name: shadow;
 	animation-duration: 100ms;
 	animation-fill-mode: forwards;
+	cursor: pointer;
 }
 .remove_buttons {
 	color: white;
@@ -250,7 +251,7 @@ p {
 	display: grid;
 	gap: 10px;
 	grid-template-columns: 1fr 1fr 60px;
-	height: 500px;
+	height: 450px;
 	background-color: whitesmoke;
 	border-radius: 10px;
 	padding: 10px;

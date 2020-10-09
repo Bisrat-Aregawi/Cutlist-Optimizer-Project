@@ -2,6 +2,9 @@
 "use strict";
 let [steelTypeCounter, stdLReqCounter, ST_ID_Counter, length_counter, frequency_counter, row_counter, row_counter2, row_remover] = [2, 2, 2, 2, 2, 2, 2, 2];
 
+let stlAddBtn = document.querySelector(".stl_add_button").addEventListener("click", steelTypeAdd);
+let rowAddBtn = document.querySelector(".row_add_button").addEventListener("click", entry_rows_add_btn);
+
 const count = {
 //  the purpose of this object is to return a number ascending from the beginning (i.e. from 2 in this case).
 //  any call of the count methods with the appropriate property anme given to it will provide ascending
