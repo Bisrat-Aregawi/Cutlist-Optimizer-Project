@@ -82,7 +82,8 @@ const grandBakery = {
   // Below is a button making method responsible for making a "suicide bomber" button.
   btnBakery() {
     let btn = document.createElement("button");                       // Create a BUTTON element and store in "btn" variable.
-    btn.setAttribute("id", `row_${count.row_remover()}_clear`);      // Give "btn" an id appending the return of count() function with "row_remover" argument.
+    btn.setAttribute("id", `row_${count.row_remover()}_clear`);       // Give "btn" an id appending the return of count() function with "row_remover" argument.
+    btn.setAttribute("class", 'remover_button')
     btn.setAttribute("onclick", "row_remove();");                     // Add "onclick" attribute to initiate "row_remove()" function.
     btn.innerHTML = "Remove";                                         // Write inside "btn" the value "Remove".
     return btn;                                // Return a fully constructed BUTTON Element.

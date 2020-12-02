@@ -1,32 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./optimizer.css" />
-    <script src="./cutlist_1.js"></script>
-    <script src="./cutlist_2.js"></script>
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./optimizer.css" />
+  <script src="./cutlist_1.js"></script>
+  <script src="./cutlist_2.js"></script>
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      <p>CUT LIST OPTIMIZER</p>
+    </header>
     <main>
-      <header>
-        <p>CUT LIST OPTIMIZER</p>
-      </header>
       <article class="type_entry">
         <div class="type_entry_title">
           <p>STEEL TYPE</p>
         </div>
         <div class="steel_id">
-          <input
-            type="text"
-            id="steelId_input_id"
-            class="steelId_input_class"
-            value=""
-          />
+          <input type="text" id="steelId_input_id" class="steelId_input_class" value="" />
         </div>
         <div class="add_btn">
           <button class="add_buttons" type="button" onclick="steelTypeAdd()">
-            Add
+            Add Steel Type
           </button>
         </div>
       </article>
@@ -37,12 +35,8 @@
           </div>
           <div class="steel_type_selector">
             <p>Steel Type</p>
-            <select
-              name="steel_select"
-              id="steel_type_selection"
-              onchange="selectChange();"
-              onmouseover="selectHover();"
-            ></select>
+            <select name="steel_select" id="steel_type_selection" onchange="selectChange();"
+              onmouseover="selectHover();"></select>
           </div>
           <div class="LAF_title">
             <p>Lengths</p>
@@ -62,11 +56,7 @@
             </div>
           </div>
           <div class="row_add_btn">
-            <button
-              class="add_buttons"
-              id="add_row_btn"
-              onclick="entry_rows_add_btn()"
-            >
+            <button class="add_buttons" id="add_row_btn" onclick="entry_rows_add_btn()">
               Add Row
             </button>
           </div>
@@ -94,12 +84,14 @@
                 </div>
               </div>
               <div class="remover" id="row_remover">
-                <button id="row_1_clear" onclick="row_remove();">Remove</button>
+                <button id="row_1_clear" class="remover_button" onclick="row_remove();">Remove</button>
               </div>
             </div>
           </div>
         </section>
       </article>
     </main>
-  </body>
+  </div>
+</body>
+
 </html>
