@@ -1,292 +1,309 @@
 * {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-	font-family: calibri;
-	color: rgb(98, 98, 98);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: calibri;
+  color: rgb(98, 98, 98);
 }
 body {
-	background-color: #4c7aae;
+  background-color: #4c7aae;
 }
 main {
-	margin: 20px auto;
-	padding: 10px;
-	gap: 10px;
-	box-shadow: 0px 0px 10px #3b5f88;
+  margin: 20px auto;
+  padding: 10px;
+  gap: 10px;
+  box-shadow: 0px 0px 10px #3b5f88;
+  border-radius: 7px;
+  display: grid;
+  grid-template-areas: "type_entry result_output"
+						"len_freq_input result_output"
+						"len_freq_input solve";
+  max-width: 1000px;
+}
+#solve-button {
+	grid-area: solve;
+	background: #ffffff;
+	color: rgb(119, 119, 119);
+	padding: 5px;
+	font-size: 1.25em;
+	font-weight: 600;
+	width: 95%;
+	margin: auto;
 	border-radius: 7px;
-	display: grid;
-	grid-template-areas: "type_entry result_output" "len_freq_input result_output";
-	max-width: 1000px;
+	border: none;
 }
 header {
-	font-size: 2.5rem;
-	margin: 20px auto;
-	padding: 10px;
-	width: max-content;
-	border-radius: 7px;
-	box-shadow: 0px 0px 10px #3b5f88;
+  font-size: 2.5rem;
+  margin: 20px auto;
+  padding: 10px;
+  width: max-content;
+  border-radius: 7px;
+  box-shadow: 0px 0px 10px #3b5f88;
 }
 header p {
-	color: white;
+  color: white;
 }
 .type_entry {
-	grid-area: type_entry;
-	display: grid;
-	gap: 6px;
-	grid-template-areas: "title" "input" "add_btn";
-	border-radius: 7px;
-	width: 65%;
-	margin: auto;
-	padding: 6px 20px 10px;
-	box-shadow: 0px 0px 10px #3b5f88;
+  grid-area: type_entry;
+  display: grid;
+  gap: 6px;
+  grid-template-areas: "title" "input" "add_btn";
+  border-radius: 7px;
+  width: 65%;
+  margin: auto;
+  padding: 6px 20px 10px;
+  box-shadow: 0px 0px 10px #3b5f88;
 }
 .type_entry p {
-	font-size: 1.35rem;
-	font-weight: 600;
+  font-size: 1.35rem;
+  font-weight: 600;
 }
 .type_entry input {
-	text-align: center;
+  text-align: center;
 }
 .type_entry_title {
-	grid-area: title;
+  grid-area: title;
 }
 .type_entry_title p {
-	color: white;
+  color: white;
 }
 .steel_id {
-	grid-area: input;
+  grid-area: input;
 }
 .add_btn {
-	grid-area: add_btn;
+  grid-area: add_btn;
 }
 .len_freq_input {
-	min-width: 200px;
-	max-width: 100%;
-	grid-area: len_freq_input;
-	box-shadow: 0px 0px 10px #3b5f88;
-	display: grid;
-	gap: 10px;
-	border-radius: 7px;
+  min-width: 200px;
+  max-width: 100%;
+  grid-area: len_freq_input;
+  box-shadow: 0px 0px 10px #3b5f88;
+  display: grid;
+  gap: 10px;
+  border-radius: 7px;
 }
 .result_output {
-	grid-area: result_output;
-	box-shadow: 0px 0px 10px #3b5f88;
-	padding-top: 14px;
-	border-radius: 7px;
+  grid-area: result_output;
+  box-shadow: 0px 0px 10px #3b5f88;
+  padding-top: 14px;
+  border-radius: 7px;
 }
 .data_input_section,
 .data_output_section {
-	border-radius: 7px;
+  border-radius: 7px;
 }
 .data_input_section {
-	display: grid;
-	gap: 10px;
-	grid-template-areas: "input_section_title" "steel_type_selector" "LAF_title" "length_and_frequencies" "row_add_btn";
-	padding: 10px;
+  display: grid;
+  gap: 10px;
+  grid-template-areas: "input_section_title" "steel_type_selector" "LAF_title" "length_and_frequencies" "row_add_btn";
+  padding: 10px;
 }
 .input_section_title {
-	background-color: whitesmoke;
-	grid-area: input_section_title;
-	font-size: 2.2rem;
-	border-radius: 7px;
+  background-color: whitesmoke;
+  grid-area: input_section_title;
+  font-size: 2.2rem;
+  border-radius: 7px;
 }
 .steel_type_selector {
-	display: grid;
-	gap: 10px;
-	grid-template-columns: 1fr 2fr;
-	grid-area: steel_type_selector;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 2fr;
+  grid-area: steel_type_selector;
 }
 .steel_type_selector p {
-	color: white;
-	font-size: 1.25rem;
-	font-weight: 600;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 600;
 }
 .steel_type_selector select {
-	display: block;
-	border: 1.6px solid gainsboro;
-	border-radius: 7px;
-	height: 1.75rem;
+  display: block;
+  border: 1.6px solid gainsboro;
+  border-radius: 7px;
+  height: 1.75rem;
 }
 .length_and_frequencies {
-	position: relative;
-	display: grid;
-	gap: 10px;
-	padding: 16px;
-	grid-template-areas: "row_number_viewers length_inputs frequency_inputs";
-	grid-area: length_and_frequencies;
-	overflow-y: auto;
-	height: 300px;
-	background-color: whitesmoke;
+  position: relative;
+  display: grid;
+  gap: 10px;
+  padding: 16px;
+  grid-template-areas: "row_number_viewers length_inputs frequency_inputs";
+  grid-area: length_and_frequencies;
+  overflow-y: auto;
+  height: 300px;
+  background-color: whitesmoke;
 }
 .row_number_viewers {
-	display: grid;
-	grid-area: row_number_viewers;
-	gap: 6px;
-	grid-template-rows: repeat(auto-fill, minmax(auto, 36px));
-	width: 30px;
+  display: grid;
+  grid-area: row_number_viewers;
+  gap: 6px;
+  grid-template-rows: repeat(auto-fill, minmax(auto, 36px));
+  width: 30px;
 }
 .row_number_viewers p {
-	padding: 7px;
-	border: 1px solid gainsboro;
-	border-radius: 7px;
+  padding: 7px;
+  border: 1px solid gainsboro;
+  border-radius: 7px;
 }
 .length_inputs {
-	display: grid;
-	gap: 10px;
-	grid-template-rows: repeat(auto-fill, minmax(auto, 36px));
-	grid-area: length_inputs;
+  display: grid;
+  gap: 10px;
+  grid-template-rows: repeat(auto-fill, minmax(auto, 36px));
+  grid-area: length_inputs;
 }
 .frequency_inputs {
-	display: grid;
-	gap: 10px;
-	grid-template-rows: repeat(auto-fill, minmax(auto, 36px));
-	grid-area: frequency_inputs;
+  display: grid;
+  gap: 10px;
+  grid-template-rows: repeat(auto-fill, minmax(auto, 36px));
+  grid-area: frequency_inputs;
 }
 .LAF_title {
-	display: grid;
-	gap: 10px;
-	grid-template-columns: auto auto;
-	grid-area: LAF_title;
-	width: 100%;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: auto auto;
+  grid-area: LAF_title;
+  width: 100%;
 }
 .LAF_title p {
-	font-size: 1.5rem;
-	background-color: whitesmoke;
-	border-radius: 7px;
-	padding: 6px;
+  font-size: 1.5rem;
+  background-color: whitesmoke;
+  border-radius: 7px;
+  padding: 6px;
 }
 .leng_prop_title {
-	font-size: x-large;
-	background-color: darkgray;
-	height: 30px;
-	color: white;
+  font-size: x-large;
+  background-color: darkgray;
+  height: 30px;
+  color: white;
 }
 .length_inputs,
 .frequency_inputs {
-	display: grid;
-	gap: 6px;
+  display: grid;
+  gap: 6px;
 }
 .freq_prop_title {
-	font-size: x-large;
-	background-color: darkgray;
-	height: 30px;
-	color: white;
+  font-size: x-large;
+  background-color: darkgray;
+  height: 30px;
+  color: white;
 }
 .row_add_btn {
-	width: 60%;
-	margin: auto;
+  width: 60%;
+  margin: auto;
 }
 [type="number"],
 [type="text"] {
-	font-size: large;
-	width: 100%;
-	border: 1.6px solid gainsboro;
-	border-radius: 7px;
-	padding: 6px 10px 6px 20px;
-	color: rgb(0, 0, 0);
-	background-color: white;
+  font-size: large;
+  width: 100%;
+  border: 1.6px solid gainsboro;
+  border-radius: 7px;
+  padding: 6px 10px 6px 20px;
+  color: rgb(0, 0, 0);
+  background-color: white;
 }
 .steelId_input_class {
-	width: 100%;
-	border: 1.6px solid gainsboro;
-	border-radius: 7px;
-	padding: 7px 10px 7px 20px;
-	color: rgb(0, 0, 0);
-	background-color: white;
+  width: 100%;
+  border: 1.6px solid gainsboro;
+  border-radius: 7px;
+  padding: 7px 10px 7px 20px;
+  color: rgb(0, 0, 0);
+  background-color: white;
 }
 .add_buttons {
-	width: 100%;
-	color: white;
-	background: #4cae4f;
-	border: none;
-	border-radius: 4px;
-	padding: 6px 0px;
-	font-size: 1rem;
-	font-weight: 600;
+  width: 100%;
+  color: white;
+  background: #4cae4f;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 0px;
+  font-size: 1.25rem;
+  font-weight: 600;
 }
 .add_buttons:active {
-	background: #46a049;
+  background: #46a049;
 }
+#solve-button:active {
+	background: #dddddd;
+  }
 button:hover {
-	animation-name: shadow;
-	animation-duration: 100ms;
-	animation-fill-mode: forwards;
+  animation-name: shadow;
+  animation-duration: 100ms;
+  animation-fill-mode: forwards;
 }
 .remover_button {
-	color: white;
-	background: #ae4f4c;
-	border: none;
-	border-radius: 3px;
-	font-size: 1rem;
-	font-weight: 400;
+  color: white;
+  background: #ae4f4c;
+  border: none;
+  border-radius: 3px;
+  font-size: 1rem;
+  font-weight: 400;
 }
 @keyframes shadow {
-	100% {
-		box-shadow: 0px 6px 10px #3b5f88;
-	}
+  100% {
+    box-shadow: 0px 6px 10px #3b5f88;
+  }
 }
 p {
-	text-align: center;
-	font-weight: 400;
+  text-align: center;
+  font-weight: 400;
 }
 .data_output_section {
-	display: grid;
-	gap: 10px;
-	grid-template-areas: "output_section_title" "SAR_title" "types_and_requirements";
-	padding: 0px;
+  display: grid;
+  gap: 10px;
+  grid-template-areas: "output_section_title" "SAR_title" "types_and_requirements";
+  padding: 0px;
 }
 .output_section_title {
-	font-size: 2.2rem;
-	background-color: whitesmoke;
-	border-radius: 7px;
-	grid-area: output_section_title;
-	width: 95%;
-	margin: auto;
+  font-size: 2.2rem;
+  background-color: whitesmoke;
+  border-radius: 7px;
+  grid-area: output_section_title;
+  width: 95%;
+  margin: auto;
 }
 .types_and_requirements {
-	display: grid;
-	gap: 10px;
-	grid-template-columns: 1fr 1fr 60px;
-	height: 500px;
-	background-color: whitesmoke;
-	border-radius: 7px;
-	padding: 10px;
-	overflow-y: auto;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr 60px;
+  height: 500px;
+  background-color: whitesmoke;
+  border-radius: 7px;
+  padding: 10px;
+  overflow-y: auto;
 }
 .numeric_output_data {
-	display: grid;
-	gap: 10px;
-	grid-template-areas: "SAR_title" "output_section_title";
-	width: 95%;
-	margin: auto;
+  display: grid;
+  gap: 10px;
+  grid-template-areas: "SAR_title" "output_section_title";
+  width: 95%;
+  margin: auto;
 }
 .SAR_title {
-	display: grid;
-	gap: 10px;
-	grid-template-columns: 1fr 1fr;
-	grid-area: SAR_title;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  grid-area: SAR_title;
 }
 .SAR_title p {
-	font-size: 1.5rem;
-	background-color: whitesmoke;
-	border-radius: 7px;
-	padding: 6px;
+  font-size: 1.5rem;
+  background-color: whitesmoke;
+  border-radius: 7px;
+  padding: 6px;
 }
 .remover {
-	display: grid;
-	grid-template-rows: repeat(auto-fill, 33px);
-	gap: 12px;
+  display: grid;
+  grid-template-rows: repeat(auto-fill, 33px);
+  gap: 12px;
 }
 .steel_type_class {
-	display: grid;
-	grid-template-rows: repeat(auto-fill, minmax(auto, 36px));
-	gap: 10px;
+  display: grid;
+  grid-template-rows: repeat(auto-fill, minmax(auto, 36px));
+  gap: 10px;
 }
 .stdL_req_class {
-	display: grid;
-	grid-template-rows: repeat(auto-fill, minmax(auto, 36px));
-	gap: 10px;
+  display: grid;
+  grid-template-rows: repeat(auto-fill, minmax(auto, 36px));
+  gap: 10px;
 }
 button {
-	cursor: pointer;
+  cursor: pointer;
 }
