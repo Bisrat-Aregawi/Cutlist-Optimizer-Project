@@ -59,7 +59,6 @@ function selectHover() {
             inputCapture("lengthArray"),
             inputCapture("frequencyArray")
           );
-          console.log(objectArray);
           break;
         } else if (
           parseFloat(LFR_capture.length().children[j].children[0].value) !==
@@ -72,7 +71,6 @@ function selectHover() {
             inputCapture("lengthArray"),
             inputCapture("frequencyArray")
           );
-          console.log(objectArray);
           break;
         }
       }
