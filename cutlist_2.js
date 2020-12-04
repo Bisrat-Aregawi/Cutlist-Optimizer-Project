@@ -2,6 +2,10 @@
 // Its contents are objects containing Steel Name, Steel Length and Steel Quantity properties.
 // The "objectArray" is populated specifically by the "selectHover()" function.
 let objectArray = [];
+let rowRemoveBtn = document.querySelector("#row_remover").addEventListener("click", row_remove);
+let selHov = document.querySelector("#steel_type_selection");
+selHov.addEventListener("mouseover", selectHover);
+selHov.addEventListener("change", selectChange);
 // Below is a class called "GrandClass" responsible for making objects.
 // It makes object for having steelNames, lengths, and quantities as properties of each object
 class GrandClass {
