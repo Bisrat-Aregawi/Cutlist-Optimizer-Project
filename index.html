@@ -1,30 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD:index.html
   <head>
     <meta charset="UTF-8" />
     <title>Document</title>
     <link rel="stylesheet" href="./optimizer.css" />
   </head>
   <body>
+=======
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./optimizer.css" />
+  <script src="./cutlist_1.js"></script>
+  <script src="./cutlist_2.js"></script>
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      <p>CUT LIST OPTIMIZER</p>
+    </header>
+>>>>>>> a34748a2f6bc98f7d4185bf1998df1efc7bd56d7:cutlist-optimizer.html
     <main>
-      <header>
-        <p>CUT LIST OPTIMIZER</p>
-      </header>
       <article class="type_entry">
         <div class="type_entry_title">
           <p>STEEL TYPE</p>
         </div>
         <div class="steel_id">
-          <input
-            type="text"
-            id="steelId_input_id"
-            class="steelId_input_class"
-            value=""
-          />
+          <input type="text" id="steelId_input_id" class="steelId_input_class" value="" />
         </div>
         <div class="add_btn">
+<<<<<<< HEAD:index.html
           <button class="stl_add_button" type="button">
             Add
+=======
+          <button class="add_buttons" type="button" onclick="steelTypeAdd()">
+            Add Steel Type
+>>>>>>> a34748a2f6bc98f7d4185bf1998df1efc7bd56d7:cutlist-optimizer.html
           </button>
         </div>
       </article>
@@ -35,10 +49,15 @@
           </div>
           <div class="steel_type_selector">
             <p>Steel Type</p>
+<<<<<<< HEAD:index.html
             <select
               name="steel_select"
               id="steel_type_selection"
             ></select>
+=======
+            <select name="steel_select" id="steel_type_selection" onchange="selectChange();"
+              onmouseover="selectHover();"></select>
+>>>>>>> a34748a2f6bc98f7d4185bf1998df1efc7bd56d7:cutlist-optimizer.html
           </div>
           <div class="LAF_title">
             <p>Lengths</p>
@@ -58,10 +77,14 @@
             </div>
           </div>
           <div class="row_add_btn">
+<<<<<<< HEAD:index.html
             <button
               class="row_add_button"
               id="add_row_btn"
             >
+=======
+            <button class="add_buttons" id="add_row_btn" onclick="entry_rows_add_btn()">
+>>>>>>> a34748a2f6bc98f7d4185bf1998df1efc7bd56d7:cutlist-optimizer.html
               Add Row
             </button>
           </div>
@@ -89,14 +112,26 @@
                 </div>
               </div>
               <div class="remover" id="row_remover">
+<<<<<<< HEAD:index.html
                 <button id="row_1_clear" >Remove</button>
+=======
+                <button id="row_1_clear" class="remover_button" onclick="row_remove();">Remove</button>
+>>>>>>> a34748a2f6bc98f7d4185bf1998df1efc7bd56d7:cutlist-optimizer.html
               </div>
             </div>
           </div>
         </section>
       </article>
+      <button id="solve-button">Calculate</button>
     </main>
+<<<<<<< HEAD:index.html
     <script src="./cutlist_1.js"></script>
     <script src="./cutlist_2.js"></script>
   </body>
 </html>
+=======
+  </div>
+</body>
+
+</html>
+>>>>>>> a34748a2f6bc98f7d4185bf1998df1efc7bd56d7:cutlist-optimizer.html
