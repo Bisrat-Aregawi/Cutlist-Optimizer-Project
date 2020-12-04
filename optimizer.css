@@ -122,7 +122,6 @@ header p {
   height: 1.75rem;
 }
 .length_and_frequencies {
-<<<<<<< HEAD
 	position: relative;
 	display: grid;
 	gap: 10px;
@@ -132,17 +131,6 @@ header p {
 	overflow-y: auto;
 	height: 250px;
 	background-color: whitesmoke;
-=======
-  position: relative;
-  display: grid;
-  gap: 10px;
-  padding: 16px;
-  grid-template-areas: "row_number_viewers length_inputs frequency_inputs";
-  grid-area: length_and_frequencies;
-  overflow-y: auto;
-  height: 300px;
-  background-color: whitesmoke;
->>>>>>> a34748a2f6bc98f7d4185bf1998df1efc7bd56d7
 }
 .row_number_viewers {
   display: grid;
@@ -220,7 +208,6 @@ header p {
   color: rgb(0, 0, 0);
   background-color: white;
 }
-<<<<<<< HEAD
 .row_add_button, .stl_add_button {
 	width: 100%;
 	color: white;
@@ -233,26 +220,11 @@ header p {
 }
 .row_add_button:active, .stl_add_button:active {
 	background: hsl(122, 39%, 45%);
-=======
-.add_buttons {
-  width: 100%;
-  color: white;
-  background: #4cae4f;
-  border: none;
-  border-radius: 4px;
-  padding: 6px 0px;
-  font-size: 1.25rem;
-  font-weight: 600;
-}
-.add_buttons:active {
-  background: #46a049;
->>>>>>> a34748a2f6bc98f7d4185bf1998df1efc7bd56d7
 }
 #solve-button:active {
 	background: #dddddd;
   }
 button:hover {
-<<<<<<< HEAD
 	animation-name: shadow;
 	animation-duration: 100ms;
 	animation-fill-mode: forwards;
@@ -265,19 +237,6 @@ button:hover {
 	border-radius: 4px;
 	font-size: 1rem;
 	font-weight: 600;
-=======
-  animation-name: shadow;
-  animation-duration: 100ms;
-  animation-fill-mode: forwards;
-}
-.remover_button {
-  color: white;
-  background: #ae4f4c;
-  border: none;
-  border-radius: 3px;
-  font-size: 1rem;
-  font-weight: 400;
->>>>>>> a34748a2f6bc98f7d4185bf1998df1efc7bd56d7
 }
 @keyframes shadow {
   100% {
@@ -303,7 +262,6 @@ p {
   margin: auto;
 }
 .types_and_requirements {
-<<<<<<< HEAD
 	display: grid;
 	gap: 10px;
 	grid-template-columns: 1fr 1fr 60px;
@@ -312,16 +270,6 @@ p {
 	border-radius: 10px;
 	padding: 10px;
 	overflow-y: auto;
-=======
-  display: grid;
-  gap: 10px;
-  grid-template-columns: 1fr 1fr 60px;
-  height: 500px;
-  background-color: whitesmoke;
-  border-radius: 7px;
-  padding: 10px;
-  overflow-y: auto;
->>>>>>> a34748a2f6bc98f7d4185bf1998df1efc7bd56d7
 }
 .numeric_output_data {
   display: grid;
